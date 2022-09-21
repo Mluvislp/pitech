@@ -21,4 +21,5 @@ Route::get('/hello',function(){
     return "HE";
 });
 Route::post('/signin',[App\Http\Controllers\api\account\AccountController::class, 'signIn'])->name('signIn');
+Route::post('/login',[App\Http\Controllers\api\account\AccountController::class, 'login'])->name('logIn');
 
