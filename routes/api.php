@@ -20,5 +20,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/hello',function(){
     return "HE";
 });
-Route::post('/signin',[App\Http\Controllers\api\account::class, 'signIn']);
+Route::post('/signin',[App\Http\Controllers\api\account\AccountController::class, 'signIn'])->name('signIn');
 

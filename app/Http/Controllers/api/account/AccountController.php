@@ -32,7 +32,7 @@ class AccountController extends Controller
             ], 201);
         }catch (Exception $error) {
             Log::error($error);
-            return response()->json(['message' => Messages::MSG_0001], 500);
+            return response()->json($error);
         }
        
         
